@@ -1,34 +1,19 @@
 #include <iostream>
+#include <vector>
 #include <queue>
 #include <assert.h>
+
 using namespace std;
 
 namespace CP {
-    template <typename T>
-    class queue {
-    protected:
-        vector<T> mVect;
-    public:
-        T& front(){
-            return *mVect.begin();
-        }
-        T& back(){
-            return *(mVect.end()-1);
-        }
-        void push(T element){
-            mVect.push_back();
-        }
-        void pop(){
-            mVect.erase(mVect.begin());
-        }
-        bool empty(){
-            return (mVect.size()==0);
-        }
-        size_t size(){
-            return mVect.size();
-        }
+template <typename T>
+class queue {
+protected:
+  vector<T> mVect;
 
-    };
+public:
+
+};
 }
 
 void test1(){
